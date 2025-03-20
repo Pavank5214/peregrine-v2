@@ -1,89 +1,369 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.4.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.4.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Peregrine Aerospace Pvt. Ltd. - Precision-engineered drones for the future.">
+    <meta name="keywords" content="drones, aerospace, Peregrine, technology, FPV, 4K, 8K">
+    <meta name="author" content="Peregrine Aerospace Pvt. Ltd.">
+    <title>Peregrine Aerospace Pvt. Ltd.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-spinner"></div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- Header -->
+    <header>
+        <div class="brand">Peregrine</div>
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#user-guide">User Guide</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#user-guide">User Guide</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <!-- Hero Section -->
+<section id="home" class="hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+        <source src="home.mp4" type="video/mp4">
+        <source src="home.webm" type="video/webm">
+        Your browser does not support the video tag. Please view this page on a modern browser.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="logo hero-logo">
+            <img src="logo.png" alt="Peregrine Aerospace Pvt. Ltd. Logo">
+        </div>
+        <h1>Seamless Drone Connectivity</h1>
+        <p>Enhance your drone operations with the Peregrine MAVLink Wi-Fi Module – reliable, lightweight, and long-range communication for autopilots and ground control stations.</p>
+        <a href="#user-guide" class="cta">Explore Now</a>
+    </div>
+</section>
+
+   <!-- Products Section -->
+<section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1516321497487-e288fb19713f" alt="Peregrine MAVLink Wi-Fi Communication Module">
+            <h3>Peregrine MAVLink Wi-Fi Module</h3>
+            <p>Lightweight Wi-Fi bridge for autopilots, offering 300m to 1km range and seamless connectivity to ground control stations.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Features Section -->
+<section id="features" class="features">
+    <h2>Why Peregrine?</h2>
+    <div class="feature-grid">
+        <div class="feature">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1629654297299-c8506221ca97" alt="Long-range Wi-Fi signal illustration">
+            <h3>Long-Range Connectivity</h3>
+            <p>Communicate seamlessly with your drone over distances of 300m to 2.5km. The Peregrine module ensures a stable connection even in challenging environments. Its U.Fl connector supports an external antenna for enhanced signal strength. This range is ideal for aerial surveys, inspections, or long-distance FPV flights. Stay in control, no matter how far your drone flies.</p>
+        </div>
+        <div class="feature">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1516321497487-e288fb19713f" alt="Close-up of lightweight Peregrine module">
+            <h3>Lightweight Design</h3>
+            <p>At just 5g, the Peregrine module adds minimal weight to your drone setup. This lightweight design ensures no compromise on flight performance or battery life. Its compact size makes it perfect for small and large drones alike. Ideal for racing drones or professional setups needing efficiency. Fly longer and farther without added bulk.</p>
+        </div>
+        <div class="feature">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Ground control station interface">
+            <h3>Versatile Compatibility</h3>
+            <p>Connects to any Wi-Fi-enabled ground control station, including smartphones and laptops. Integrates seamlessly with Pixhawk and other autopilots via a JST-GH connector. Use it with Mission Planner, QGroundControl, or custom apps effortlessly. This flexibility suits hobbyists, developers, and professionals alike. Control your drone with the tools you prefer.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Founded in 2020, Peregrine Aerospace Pvt. Ltd. is a leader in drone communication technology, dedicated to enhancing aerial operations through innovative solutions. Our mission is to bridge the gap between drones and their operators, ensuring seamless and reliable connectivity in every flight scenario.</p>
+    <p>At the heart of our offerings is the Peregrine MAVLink Wi-Fi Communication Module, a lightweight and powerful device designed to connect autopilots like Pixhawk to any Wi-Fi-enabled ground control station, including smartphones. Weighing just 5g, the module delivers long-range connectivity of up to 2.5km, making it an essential tool for drone enthusiasts, developers, and professionals alike.</p>
+    <p>Our team of engineers and drone experts has worked tirelessly to develop a product that meets the rigorous demands of modern drone operations. With features like LED status lights, easy configuration via a web interface, and compatibility with industry-standard autopilots, the Peregrine module ensures that you stay in control, no matter the distance.</p>
+    <p>We are committed to empowering our users with technology that enhances precision, reliability, and efficiency in every mission. Whether you’re a hobbyist capturing stunning aerial footage or a professional conducting complex surveys, Peregrine Aerospace Pvt. Ltd. is here to elevate your drone experience with cutting-edge communication solutions.</p>
+</section>
+
+    <!-- User Guide Section -->
+    <section id="user-guide" class="user-guide">
+        <h2>Peregrine MAVLink Wi-Fi Communication Module User Guide</h2>
+        <div class="guide-content">
+            <div class="guide-images">
+                <img src="MODULE-1.png" alt="Peregrine Image 1" class="guide-image">
+                <img src="MODULE-2.png" alt="Peregrine Image 2" class="guide-image">
+            </div>
+
+            <h3>Contents</h3>
+            <ul>
+                <li><a href="#product-features">1. Product Features</a></li>
+                <li><a href="#parts">2. Parts</a></li>
+                <li><a href="#product-details">3. Product Details</a></li>
+                <li><a href="#dimensions">4. Dimensions</a></li>
+                <li><a href="#in-the-box">5. In the Box</a></li>
+                <li><a href="#specifications">6. Specifications</a></li>
+                <li><a href="#getting-started">7. Getting Started</a></li>
+                <li><a href="#further-configuration">8. Further Configuration</a></li>
+                <li><a href="#pinouts">9. Pinouts</a></li>
+                <li><a href="#jumpers">10. Jumpers</a></li>
+                <li><a href="#led-status-lights">11. LED Status Lights</a></li>
+                <li><a href="#updating-settings">12. Updating Settings</a></li>
+                <li><a href="#updating-firmware">13. Updating Firmware</a></li>
+                
+            </ul>
+
+            <h3 id="product-features">1. Product Features</h3>
+            <p>The Peregrine is a MAVLink bridge that connects autopilots with any Wi-Fi enabled ground control station, even a smartphone. The Peregrine boasts the following features:</p>
+            <ul>
+                <li>ESP8266 Wi-Fi chip that is FCC and CE certified.</li>
+                <li>A U.Fl (IPEX) connector to allow for an external antenna.</li>
+                <li>JST-GH connector to connect directly to PixHawk or other Autopilot.</li>
+                <li>LED status lights for Air, Wi-Fi, and Ground Control Station.</li>
+                <li>Jumpers to access bootloader and factory reset.</li>
+            </ul>
+
+            <h3 id="parts">2. Parts</h3>
+            <p>The following figure outlines the main components of the Peregrine.</p>
+            <p><strong>Overview - Peregrine Front</strong></p>
+            <img src="PARTS.png" alt="Overview of Peregrine Front" class="guide-image"> <!-- Added image -->
+
+            <h3 id="product-details">3. Product Details</h3>
+<p>The Peregrine uses an ESP07-S board for its Wi-Fi communication and computation. The best datasheet available for the ESP07-S is available at <a href="https://docs.ai-thinker.com/_media/esp8266/docs/esp-07s_product_specification_en.pdf" target="_blank" rel="noopener noreferrer">ESP07-S Product Specification (PDF)</a>. The firmware for the Peregrine can be found on <a href="https://drive.google.com/drive/folders/1pTLPj7SldIMwj36S9vkeLI3YmKv03GgI" target="_blank" rel="noopener noreferrer">Google Drive</a>.</p>
+            <h3 id="dimensions">4. Dimensions</h3>
+            <img src="DIMENSIONS.png" alt="Peregrine Dimensions" class="guide-image"> <!-- Added image -->
+
+            <h3 id="in-the-box">5. In the Box</h3>
+            <p>Beyond Robotix Peregrine comes with the following:</p>
+            <ul>
+                <li>1x Beyond Robotix Peregrine</li>
+                <li>1x JST-GH 6-way cable</li>
+                <li>1x Antenna with u.Fl connector</li>
+            </ul>
+            <p>The gain of the antenna (4dBi) depends on the antenna chosen when purchasing.</p>
+
+            <h3 id="specifications">6. Specifications</h3>
+            <table>
+                <tr><th>Mass</th><td>5g</td></tr>
+                <tr><th>Voltage Input</th><td>5V</td></tr>
+                <tr><th>Max Output Power</th><td>20 dBm (~112 mW)</td></tr>
+                <tr><th>Current Continuous</th><td>20 mA</td></tr>
+                <tr><th>Range</th><td>300m - 2.5km</td></tr>
+                <tr><th>Current Peak</th><td>250 mA</td></tr>
+            </table>
+
+            <h3 id="getting-started">7. Getting Started</h3>
+            <p><strong>Important:</strong> Always have an antenna connected to the Peregrine before powering on.</p>
+            <ol>
+                <li>Connect the Pixhawk to Mission Planner/QGroundControl via USB and set the following parameters:
+                    <ul>
+                        <li><strong>For PX4:</strong> SER_TEL1_BAUD = 57600 (57600 8N1)</li>
+                        <li><strong>For Ardupilot:</strong>
+                            <ul>
+                                <li>SERIAL1_BAUD = 57 (57600)</li>
+                                <li>SERIAL1_PROTOCOL = 2 (MAVLink2)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Connect the Peregrine to the Pixhawk Telem 1 or 2.</li>
+                <li>Reboot your Pixhawk.</li>
+                <li>The Peregrine will boot in Access Point Mode, meaning it will appear as a network on any Wi-Fi enabled device. Connect to the Peregrine using the following credentials:
+                    <ul>
+                        <li><strong>SSID:</strong> PeregrineLink</li>
+                        <li><strong>Password:</strong> peregrineLink</li>
+                    </ul>
+                </li>
+                <li>Return to Mission Planner, and you will automatically connect to your Autopilot.</li>
+            </ol>
+
+            <h3 id="further-configuration">8. Further Configuration</h3>
+            <h4>General</h4>
+            <p>To update or find any settings, you can do this using any browser by going to <a href="http://192.168.4.1"target="_blank" rel="noopener noreferrer">192.168.4.1</a> while connected to the Peregrine. From this page, you will be able to update any settings, find the IP and port number of the Peregrine, and update the firmware. Ensure you save and reboot to utilize any changes.</p>
+
+            <h4 id="station-mode">8.1 Station Mode</h4>
+            <p>Station mode enables Peregrine to connect to an already established Wi-Fi Access Point. This is useful to communicate with multiple Peregrine units at a time. When powering on a Peregrine, it will search for the pre-defined Access Point for 1 minute before falling back to Access Point Mode.</p>
+            <p>To enable Station Mode, you must know the SSID and Password of the Access Point you want the Peregrine to connect to.</p>
+
+            <h4 id="access-point-mode">8.2 Access Point Mode</h4>
+            <p>Access Point Mode, which is the default mode, is used when you want the Peregrine to broadcast its own Wi-Fi network. You are then able to connect to this network using any Wi-Fi enabled device with ground control software, like Mission Planner or QGroundControl.</p>
+
+            <h3 id="pinouts">9. Pinouts</h3>
+            <p><strong>Peregrine Pinout (N/C = Not Connected)</strong></p>
+            <img src="PINOUT.png" alt="Peregrine Pinout" class="guide-image"> 
+            <p>The connector to the autopilot is a 6-pin JST-GH connector. The pinouts on the Peregrine are inline with the Pixhawk, hence an unmodified 6-pin JST-GH can be connected directly to any Pixhawk. The TX and RX have been swapped appropriately for a UART connection.</p>
+            <p>The antenna connector is a U.Fl connector (also known as IPEX). You can connect an antenna directly to the board or use a U.Fl to SMA adaptor to connect to a wider range of antennas.</p>
+
+            <h3 id="jumpers">10. Jumpers</h3>
+            <p><strong>Peregrine Jumpers</strong></p>
+            <img src="JUMPER.png" alt="Peregrine Jumper" class="guide-image">
+            <p>The jumpers on the Peregrine allow you to boot the Peregrine into bootloader mode or return the settings of the Peregrine to its factory default. The bootloader mode is used for checking the health of the ESP07-S module and for uploading firmware using an FTDI (or TTL) connection to a PC. An in-depth overview of how to perform this is outlined in the Firmware Update Section.</p>
+            <p>To start the Peregrine in bootloader mode, J1 must be jumped (short-circuited using a flathead screwdriver or similar) as the board is being powered up. If successful, you will see the GCS Status LED become (softly) illuminated. Once this LED is illuminated, you can remove the short circuit.</p>
+
+            <h3 id="led-status-lights">11. LED Status Lights</h3>
+<p><strong>Peregrine LED Status Lights</strong></p>
+<img src="LEDSTATUS.png" alt="Peregrine LED Status Lights showing Air (blue), Wi-Fi (green), and GCS (red) indicators" class="guide-image">
+<p>The Peregrine is equipped with three status lights: Air, Wi-Fi, and GCS. The Air LED describes the status of communications between the Peregrine and the autopilot, namely if a heartbeat is present. The Wi-Fi LED describes the status of the Wi-Fi network, for example, if the Peregrine is connected to a network or waiting for connection. Finally, the Ground Control Station (GCS) LED describes the communication between the Peregrine and the GCS software, similarly, if a heartbeat is present.</p>
+<p>The meaning of the status light indications are outlined in the following table:</p>
+<p><strong>Peregrine LED Status Lights Definitions</strong></p>
+<table>
+    <tr>
+        <th>LED</th>
+        <th>Color</th>
+        <th>Pattern</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>Air</td>
+        <td style="color: #00BFFF;">Blue</td>
+        <td><span class="led-pattern solid" style="background-color: #00BFFF;"></span> Solid</td>
+        <td>Connected (Heartbeat present)</td>
+    </tr>
+    <tr>
+        <td>Air</td>
+        <td style="color: #00BFFF;">Blue</td>
+        <td><span class="led-pattern dashed blue-dashed"></span> Dashed</td>
+        <td>Waiting for connection</td>
+    </tr>
+    <tr>
+        <td>Air</td>
+        <td style="color: #00BFFF;">Blue</td>
+        <td><span class="led-pattern dotted blue-dotted"></span> Dotted</td>
+        <td>Error (No heartbeat)</td>
+    </tr>
+    <tr>
+        <td>Wi-Fi</td>
+        <td style="color: #32CD32;">Green</td>
+        <td><span class="led-pattern solid" style="background-color: #32CD32;"></span> Solid</td>
+        <td>Connected to network</td>
+    </tr>
+    <tr>
+        <td>Wi-Fi</td>
+        <td style="color: #32CD32;">Green</td>
+        <td><span class="led-pattern dashed green-dashed"></span> Dashed</td>
+        <td>Waiting for network</td>
+    </tr>
+    <tr>
+        <td>Wi-Fi</td>
+        <td style="color: #32CD32;">Green</td>
+        <td><span class="led-pattern dotted green-dotted"></span> Dotted</td>
+        <td>Network error</td>
+    </tr>
+    <tr>
+        <td>GCS</td>
+        <td style="color: #FF4040;">Red</td>
+        <td><span class="led-pattern solid" style="background-color: #FF4040;"></span> Solid</td>
+        <td>Connected (Heartbeat present)</td>
+    </tr>
+    <tr>
+        <td>GCS</td>
+        <td style="color: #FF4040;">Red</td>
+        <td><span class="led-pattern dashed red-dashed"></span> Dashed</td>
+        <td>Waiting for connection</td>
+    </tr>
+    <tr>
+        <td>GCS</td>
+        <td style="color: #FF4040;">Red</td>
+        <td><span class="led-pattern dotted red-dotted"></span> Dotted</td>
+        <td>Error (No heartbeat)</td>
+    </tr>
+</table>
+
+            <h3 id="updating-settings">12. Updating Settings</h3>
+            <p>When connecting to the Peregrine, go to <a href="http://192.168.4.1"target="_blank" rel="noopener noreferrer">192.168.4.1</a>.</p>
+            <p>From here, you will be able to change all the following parameters:</p>
+            <img src="UPSC.png" alt="Peregrine Updating-settings" class="guide-image"> 
+            <p><strong>Ensure you reboot after changing settings!</strong></p>
+
+            <h3 id="updating-firmware">13. Updating Firmware</h3>
+            <p><strong>Updating firmware using the Web GUI:</strong></p>
+            <ol>
+                <li>Download the latest firmware release from GitHub. You will need the .bin file. <a href="https://drive.google.com/drive/folders/1pTLPj7SldIMwj36S9vkeLI3YmKv03GgI?usp=sharing"target="_blank" rel="noopener noreferrer">Download here</a>.</li>
+                <li>Connect to the Peregrine over Wi-Fi.</li>
+                <li>Go to <a href="http://192.168.4.1"target="_blank" rel="noopener noreferrer">192.168.4.1</a>.</li>
+                <li>Click on the “Firmware Update” tab.</li>
+                <li>Choose the file from your device and click update.</li>
+            </ol>
+            <p><strong>Note:</strong> The update takes about 30 seconds, so please be patient. Refresh the page after 30 seconds, and you should see the updated version number in the top right of the Web GUI.</p>
+
+          
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="\+[0-9]{10,15}">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required placeholder="Your Message" rows="5"></textarea>
+                
+                <button type="submit" class="cta">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-details">
+            <h3>Get in Touch</h3>
+            <p><strong>Email:</strong> <a href="mailto:info@peregrineaerospace.com" target="_blank" rel="noopener noreferrer">info@peregrineaerospace.com</a></p>
+            <p><strong>Mobile:</strong> <a href="tel:+919876543210" target="_blank" rel="noopener noreferrer">+91 98765 43210</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">+91 98765 43210</a></p>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-contact">
+            <h3>Our Location</h3>
+            <p>123 Innovation Drive,<br>Tech City, India 560001</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509506!2d144.9537353153167!3d-37.81627997975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d1f2a4e7b5a!2s123%20Innovation%20Dr%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1697041234567!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>© 2025 Peregrine Aerospace Pvt. Ltd. All rights reserved.</p>
+            <div class="socials">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a> | 
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a> | 
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YouTube</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
 </html>
