@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const mobileNav = document.querySelector('.mobile-nav');
     const backToTop = document.querySelector('#back-to-top');
-    const sections = document.querySelectorAll('.products, .features, .about, .user-guide, .contact'); // Added user-guide
+    const sections = document.querySelectorAll('.products, .features, .about, .user-guide, .contact');
     const navLinks = document.querySelectorAll('.desktop-nav a, .mobile-nav a');
 
     // Mobile menu toggle
@@ -50,16 +50,22 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // Section visibility on scroll
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
+    // Section visibility on scroll with fallback
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Stop observing once visible
+                }
+            });
+        }, { threshold: 0.1 });
 
-    sections.forEach(section => observer.observe(section));
+        sections.forEach(section => observer.observe(section));
+    } else {
+        // Fallback for devices without IntersectionObserver support
+        sections.forEach(section => section.classList.add('visible'));
+    }
 
     // Preloader
     window.addEventListener('load', () => {

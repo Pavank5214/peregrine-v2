@@ -248,9 +248,8 @@ header {
 .products {
     padding: 100px 40px;
     text-align: center;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    opacity: 1; /* Visible by default */
+    transform: translateY(0); /* No initial offset */
 }
 
 .products.visible {
@@ -303,9 +302,8 @@ header {
     padding: 100px 40px;
     text-align: center;
     background: #222;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    opacity: 1; /* Visible by default */
+    transform: translateY(0); /* No initial offset */
 }
 
 .features.visible {
@@ -346,9 +344,8 @@ header {
     padding: 100px 40px;
     text-align: left;
     background: #1a1a1a;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    opacity: 1; /* Visible by default */
+    transform: translateY(0); /* No initial offset */
 }
 
 .user-guide.visible {
@@ -449,9 +446,8 @@ header {
     padding: 100px 40px;
     text-align: center;
     background: #1a1a1a;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    opacity: 1; /* Visible by default */
+    transform: translateY(0); /* No initial offset */
 }
 
 .about.visible, .contact.visible {
@@ -694,7 +690,6 @@ footer {
     }
 }
 
-
 /* LED Pattern Styles */
 .led-pattern {
     display: inline-block;
@@ -767,8 +762,6 @@ footer {
         transparent 6px
     );
 }
-
-
 
 /* Contact Section Grid */
 .contact-grid {
