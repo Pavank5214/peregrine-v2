@@ -72,3 +72,20 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('preloader').classList.add('loaded');
     });
 });
+
+// Lazy Load Video Iframes
+document.addEventListener('DOMContentLoaded', () => {
+    const iframes = document.querySelectorAll('.video-item iframe');
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const iframe = entry.target;
+                iframe.src = iframe.dataset.src; // Set src from data-src
+                iframe.classList.add('loaded');
+                observer.unobserve(iframe);
+            }
+        });
+    }, { rootMargin: '0px 0px 100px 0px' });
+
+    iframes.forEach(iframe => observer.observe(iframe));
+});
